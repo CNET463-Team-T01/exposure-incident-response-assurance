@@ -1,0 +1,39 @@
+TEAM INFO - Case Study 3 (synthetic evidence pack)
+Case study designed and prepared by Dr. Mohammed Jubur, Jazan University - CNET 463
+team: T01    organisation tag: t01    domain: t01.uni.lab
+
+Zones (network 10.170.0.0/16):
+  DMZ 10.170.10.0/24 ... Servers 10.170.30.0/24 ... Admin 10.170.40.0/24 ... Users 10.170.50.0/24 ... Isolated lab 10.170.60.0/24
+
+host       address            zone           crit.     role
+idp        10.170.10.10       DMZ            High      Identity service (SSO), Internet-facing
+exam-app   10.170.10.20       DMZ            High      Online Examination System (application)
+exam-db    10.170.30.10       Servers        High      Examination database
+files      10.170.30.15       Servers        Medium    File server (exam materials, staff shares)
+backup     10.170.30.30       Servers        High      Backup server and repository
+jump       10.170.40.20       Admin          High      Administrative jump host
+soc-scan   10.170.40.5        Admin          Low       Approved vulnerability scanner (SOC)
+adm-ws     10.170.40.50       Admin          Medium    Administrator workstation
+labsrv     10.170.60.10       Isolated lab   Low       Teaching lab server (no route to other zones)
+
+Accounts: students/staff authenticate through the identity service with MFA.
+  administrator accounts: adm.lina, adm.rakan     service account: svc.sso
+Approved vulnerability scanner: soc-scan (10.170.40.5). Scanning from it is authorised.
+Time sources: read the timestamp format of every log before you compare them.
+'Now' for your decisions = 2026-12-14T04:05:30Z UTC. This is the one cutoff: no log line, in any file, is later (the endpoint log writes +03:00 local time, so convert before you compare).
+Examination sessions: see exam_schedule.csv.
+
+Files in this pack:
+  findings.csv ................. vulnerability findings (Part A)
+  auth_idp.log ................. identity / authentication log (ids A-nnn)
+  endpoint_edr.log ............. endpoint / EDR log (ids E-nnn)
+  network_fw_dns.log ........... firewall and DNS log (ids N-nnn)
+  app_audit.log ................ application, web, SOC audit log (ids P-nnn)
+  change_calendar.csv .......... approved change windows
+  backup_report.txt ............ backup jobs and restore tests (Part D)
+  recovery_dependencies.csv .... service dependency hints (Part D)
+  exam_schedule.csv ............ examination sessions (Part D)
+  assurance_dashboard.txt ...... management dashboard (Part E)
+
+All data is synthetic. Cite evidence by its id (for example A-014, N-032). Output that does not
+match this pack (names, addresses, ids, times) will not be accepted.

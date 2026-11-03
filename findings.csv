@@ -1,0 +1,9 @@
+ID,Reference,Asset,Description,CVSS,KEV,EPSS,Reachability,Privilege_required,Business_criticality,Existing_control
+F1,SYN-2026-7577,user workstations (300),Browser memory-corruption flaw,8.6,Y,0.40,"User zone, needs user interaction",User,Medium,EDR installed; browser auto-update on
+F2,SYN-2026-4525,files.t01.uni.lab,File-sharing service authentication bypass,8.7,Y,0.49,"Internal, from User and Admin zones",None,Medium,Host EDR present
+F3,SYN-2026-4277,labsrv.t01.uni.lab,Remote code execution in teaching-lab software,9.5,N,0.06,"Isolated lab zone, no route out",Local,Low,Zone isolated; no inbound or outbound routes
+F4,SYN-2026-7537,idp.t01.uni.lab,Session-validation flaw in identity service web endpoint,5.5,Y,0.83,Internet,None,High,Partial WAF rule; no virtual patch
+F5,SYN-2026-8555,backup.t01.uni.lab,Backup console credential exposure,7.4,N,0.11,Admin zone only,Admin,High,Repository retention lock configured; console shares admin credentials
+F6,SYN-2026-8227,jump.t01.uni.lab,Remote-desktop gateway privilege escalation,8.2,N,0.29,"Admin zone, plus trusted server sources",Low,High,MFA required for workstation logins
+F7,SYN-2026-7306,legacy printers (13),Firmware command-injection flaw,9.6,N,0.07,"Staff zone, internal only",None,Low,No sensitive data; printer VLAN ACL
+F8,SYN-2026-8874,exam-app.t01.uni.lab,Template-injection flaw in exam application library,7.3,N,0.34,"Via policy enforcement point, authenticated users",User,High,PEP and WAF in front of the application

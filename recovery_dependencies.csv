@@ -1,0 +1,7 @@
+service,depends_on,recovery_order_hint,owner,note
+DNS / directory,-,1,Network team,required by all services
+Identity service (idp),DNS / directory,2,Identity team,all logins and exam tokens
+Exam database (exam-db),DNS / directory,3,Database owner,results and enrolment
+File server (files),DNS / directory,3,Infrastructure,exam materials mounted by the exam app
+Exam application (exam-app),"idp, exam-db, files",4,Exam office / IT,student-facing
+Backup server (backup),DNS / directory,supports all,Infrastructure,repository and vault

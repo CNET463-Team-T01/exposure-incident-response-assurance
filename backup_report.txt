@@ -1,0 +1,23 @@
+Backup system report - t01.uni.lab
+generated: 2026-12-14T04:05:30Z
+
+[Nightly job results - last 7 runs]
+2026-12-07T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=44m  size=215.6GB
+2026-12-08T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=44m  size=211.1GB
+2026-12-09T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=52m  size=217.0GB
+2026-12-10T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=40m  size=219.1GB
+2026-12-11T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=57m  size=218.7GB
+2026-12-12T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=57m  size=220.5GB
+2026-12-13T22:17:00Z  job=nightly-exam-services  status=SUCCESS  exit_code=0  duration=41m  size=227.6GB
+
+[Offline copy (weekly, taken to separate media)]
+2026-12-11T23:00:00Z  job=weekly-offline-copy  status=SUCCESS  media=tape-04
+
+[Repository]
+primary repository: reachable with the administrator console account (same credential family as jump/files)
+snapshots listed at report time: 0 (purged)
+
+[Restore tests - exam service]
+2026-10-18T09:00:00Z  restore_test exam-service  result=FAILED  duration=11h18m  detail="restore stopped at step 2 of 6: backup vault key not found at the configured location (\\files\ops\vault\)"
+no later restore test recorded
+

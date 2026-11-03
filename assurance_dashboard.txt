@@ -1,0 +1,14 @@
+SECURITY OPERATIONS - WEEKLY DASHBOARD (management view)
+week ending 2026-12-13
+
+Patch compliance ........ 98.2%
+   scope: all managed endpoints and servers
+Alerts processed ......... 4376
+   of which closed automatically by playbook: 74%
+Mean time to acknowledge . 8 min
+   (time to detect / time to contain: not reported)
+Backup job success ....... 100%   restore test success (last 12 months): 1 of 3
+Log sources .............. 9 of 9 onboarded
+Vulnerability scans ...... 100% completed (scope: User, Servers and DMZ zones)
+Open critical findings ... 8
+

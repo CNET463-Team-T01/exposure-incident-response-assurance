@@ -1,0 +1,8 @@
+session,start_utc,end_utc,service,note
+D-1 morning,2026-12-13T06:00:00Z,2026-12-13T08:00:00Z,Online Examination System,completed
+D-1 midday,2026-12-13T09:30:00Z,2026-12-13T11:30:00Z,Online Examination System,completed
+D morning,2026-12-14T07:30:00Z,2026-12-14T09:30:00Z,Online Examination System,NEXT session; ~600 students
+D midday,2026-12-14T10:00:00Z,2026-12-14T12:00:00Z,Online Examination System,~550 students
+D+1 morning,2026-12-15T06:30:00Z,2026-12-15T08:30:00Z,Online Examination System,
+D+1 midday,2026-12-15T10:00:00Z,2026-12-15T12:00:00Z,Online Examination System,
+D+2 morning,2026-12-16T06:30:00Z,2026-12-16T08:30:00Z,Online Examination System,final session of the week
