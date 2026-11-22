@@ -15,6 +15,8 @@
 4. [Part E – Assurance, Security Metrics and Executive Guidance](#part-e--assurance-security-metrics-and-executive-guidance)
 5. [References](#references)
 
+> **Evidence-pack note:** `TEAM_INFO.txt` documents the complete synthetic evidence pack used for this analysis. The source log files named there (`auth_idp.log`, `endpoint_edr.log`, `network_fw_dns.log`, and `app_audit.log`) are not included as separate repository files; their evidence IDs, timestamps, and conclusions are reproduced and cited in this report. The supporting files that are included in the repository remain available for direct inspection.
+
 ---
 
 # Part A & B – Exposure Prioritization, Attack Path and Detection
